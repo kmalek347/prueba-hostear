@@ -1,0 +1,112 @@
+.titulo__form {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.flecha {
+    height: 34px;
+    color: var(--color-blanco);
+    position: absolute;
+    left: 0;
+}
+
+
+h1 {
+
+    font-size: clamp(15px, 1.7em, 30px);
+}
+
+
+
+
+
+
+form {
+    overflow: hidden;
+    min-width: 100%;
+}
+
+
+
+.contenedor__form {
+    height: 75%;
+}
+
+
+.usuario__form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--color-gris-borde-oscuro) solid 1px;
+    border-radius: 5px;
+    color: var(--color-gris-letra);
+    padding: 16px calc(1.8dvw + 30px) 16px 1.8dvw;
+    gap: 10px;
+    position: relative;
+
+}
+
+.icono_usuario__form {
+    flex-shrink: 0;
+    max-width: 46px;
+    max-height: 46px;
+    background-color: var(--color-gris-borde-oscuro);
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.datos_usuario__form {
+    flex-grow: 1;
+    width: calc(100% - 20dvw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+
+}
+
+.email_usuario__form {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    color: var(--color-blanco);
+    text-align: start;
+
+}
+
+
+.remover_usuario__form {
+    position: absolute;
+    right: 1.8dvw;
+    z-index: 5;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color-gris-letra);
+    max-height: 24px;
+}
+
+
+
+
+
+
+.texto_inputs__form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto_inputs__form a {
+    font-weight: 400;
+    font-size: clamp(13px, 2dvw, 14px);
+    color: var(--color-celeste);
+}

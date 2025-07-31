@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Archivo Black';
+    src: url(ArchivoBlack-Regular.ttf) format('truetype');
+    /*pasar a formato woff2 */
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url(SpaceGrotesk-VariableFont_wght.ttf) format('truetype');
+}

@@ -1,0 +1,180 @@
+main {
+    height: auto;
+    width: 100%;
+
+}
+
+.contenedor__main {
+    /* height: clamp(600px, 100dvh, 2000px); */
+    min-height: 100dvh;
+}
+
+form {
+    height: auto;
+    flex-grow: 1;
+    padding: 40px 0;
+}
+
+
+
+
+.contenedor__form {
+    min-height: 80dvh;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    position: relative;
+
+}
+
+
+
+.secciones__form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    transition: left 1.5s;
+}
+
+
+
+
+
+/* ESTE OCUPA 555px*/
+.datos_personales__form {}
+
+/* ESTE OCUPA 462px*/
+.datos_cuenta__form {}
+
+/* ESTE OCUPA 232px*/
+.datos_ubicacion__form {}
+
+.datos_ocultar__form {
+
+    left: 300%;
+}
+
+.datos_ocultar_reversa__form {
+    left: -300%;
+}
+
+
+.subtitulo h4 {
+    font-family: var(--fuente-contenidos);
+    color: var(--color-gris-letra);
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+
+
+.inputs__form {
+    max-height: 13dvh;
+    gap: 8px;
+
+}
+
+.input__requerido {
+    color: var(--color-rojo);
+}
+
+#input__genero,
+#input__provincia {
+    background-color: var(--color-negro);
+    cursor: pointer;
+    /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; */
+
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert();
+    cursor: pointer;
+}
+
+
+
+
+
+.continuar__form {
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+
+#boton__continuar,
+#boton__registrar {
+    width: 100%;
+    font-size: 1.3em;
+    padding: 15px;
+    transition: background-color .4s;
+}
+
+#boton__registrar {
+    display: none;
+}
+
+
+
+#boton__continuar:disabled,
+#boton__registrar:disabled {
+    background-color: var(--color-gris-borde-oscuro);
+    opacity: .3;
+    cursor: not-allowed;
+}
+
+#boton__continuar:disabled:hover,
+#boton__registrar:disabled:hover {
+    color: var(--color-blanco);
+}
+
+
+
+
+
+
+
+.reglas_contrasena__form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.reglas_contrasena__form div>p,
+.reglas_lista__form li>p {
+    text-align: start;
+    font-weight: 400;
+}
+
+.reglas_lista__form {
+    padding-left: 1rem;
+}
+
+
+
+
+.reglas_lista__form,
+.reglas_lista__form li {
+    color: var(--color-gris-letra);
+    list-style-position: inside;
+    list-style: initial;
+
+}
+
+
+.reglas_lista_valida__form {
+    color: var(--color-azul-claro) !important;
+}

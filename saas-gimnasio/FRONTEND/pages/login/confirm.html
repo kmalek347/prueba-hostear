@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/800X800_cortada.png">
+    <link rel="stylesheet" href="../../fuentes/fuentes.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../login/css/login.css">
+    <link rel="stylesheet" href="../login/css/confirm.css">
+    <script type="module">
+        let usuario = JSON.parse(localStorage.getItem("usuario"));
+        const email = document.querySelector('.email_usuario__form');
+        email.textContent = usuario.email;
+    </script>
+    <title>Confirmacion</title>
+</head>
+
+<body>
+    <main>
+        <div class="contenedor__main">
+
+            <a href="../../index.html"><img src="../../img/800X800_cortada.png" alt="logo motivus"></a>
+            <form class="login__form">
+
+                <article class="titulo__form">
+                    <a href="./index.html" class="flecha">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M5 12l6 6" />
+                            <path d="M5 12l6 -6" />
+                        </svg>
+                    </a>
+                    <h1>INICIO DE SESIÓN</h1>
+                </article>
+
+
+                <article class="contenedor__form">
+
+                    <section class="usuario__form">
+                        <svg class="icono_usuario__form" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-user">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg>
+
+                        <div class="datos_usuario__form">
+                            <p class="">E-mail</p>
+                            <p class="email_usuario__form"></p>
+                        </div>
+
+                        <button type="button" class="remover_usuario__form"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M18 6l-12 12" />
+                                <path d="M6 6l12 12" />
+                            </svg></button>
+
+                    </section>
+
+                    <section class="inputs__form">
+
+                        <div class="texto_inputs__form">
+                            <label for="input__contrasena">Contraseña</label>
+                            <a href="" class="link__hover">¿Olvidaste tu contraseña?</a>
+
+                        </div>
+
+                        <input type="password" id="input__contrasena" placeholder="Introduzca su contraseña">
+                        <p class="error__form"></p>
+                    </section>
+
+
+                    <button class="boton__principal boton__continuar" type="button" id="boton__confirmar"
+                        disabled>Continuar</button>
+
+
+                </article>
+            </form>
+        </div>
+    </main>
+
+    <script src="script_confirm.js"></script>
+</body>
+
+</html>

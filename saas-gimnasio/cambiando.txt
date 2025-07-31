@@ -1,0 +1,27 @@
+COSAS QUE SE CAMBIO:
+
+---FUENTES DE LA LETRA---
+
+-Se creó un archivo independiente ".css" en donde se guardan todas las tipografias.
+
+
+
+---ESTRUCTURA DE LA PAGINA---
+
+-Se usó etiquetas adecuadas para cada parte de la página como los "main", "article", "section", entre otras. 
+
+-Se modificó las clases de cada etiqueta siguiente la "Metodologia BEM".
+
+-Se eliminó la etiqueta "br" y se aplicó propiedades "gap" y "margin".
+
+-Se dejó solo un "h1".
+
+
+
+---ESTILO---
+
+-Se agregaron nuevas variables para los colores y las fuentes.
+
+-Se agregaron propiedades globales para algunas etiquetas.
+
+-Se simplificaron muchas lineas
