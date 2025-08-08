@@ -17,7 +17,7 @@
     border: .5px solid var(--color-gris-borde-oscuro);
     font-family: inherit;
     cursor: pointer;
-    font-size: clamp(16px, 1.8dvw, 28px);
+    font-size: clamp(16px, 1.5dvw, 26px);
     font-weight: 800;
     padding: 8px 20px;
     display: flex;

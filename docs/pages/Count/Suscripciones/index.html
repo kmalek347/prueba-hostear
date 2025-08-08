@@ -7,6 +7,7 @@
     <link rel="icon" href="../../../img/800X800_cortada.png">
     <link rel="stylesheet" href="../../../fuentes/fuentes.css">
     <link rel="stylesheet" href="../../../css/index.css">
+
     <link rel="stylesheet" href="../Cuenta/css/index.css">
     <link rel="stylesheet" href="../Info_personal/css/index.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -27,140 +28,230 @@
 
         </div>
     </header>
+
     <main>
+
         <div class="contenedor__main">
             <article class="cuenta__article">
 
                 <section class="secciones__cuenta titulo--cuenta">
-                    <div class="titulo-cuenta__contenedor">
-                        <a href="../Cuenta/index.html" class="flecha">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M5 12l14 0" />
-                                <path d="M5 12l6 6" />
-                                <path d="M5 12l6 -6" />
-                            </svg>
-                        </a>
-                        <h1>DATOS DE ACCESO Y SEGURIDAD</h1>
-                    </div>
+                    <a href="../Cuenta/index.html" class="flecha">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M5 12l14 0" />
+                            <path d="M5 12l6 6" />
+                            <path d="M5 12l6 -6" />
+                        </svg>
+                    </a>
+                    <h1>MIS <strong class="red">GIMNASIOS</strong></h1>
 
                 </section>
 
-                <section class="secciones__cuenta division_1">
-                    <article class="izquierda">
-                        <ul class="lista">
-                            <a class="li" href="">
-                                <li>Mis favoritos</li>
-                            </a>
-                            <a class="li" href="">
-                                <li>Suscripciones activas</li>
-                            </a>
-                            <a class="li" href="">
-                                <li>Suscripciones anteriores</li>
-                            </a>
-                            <a class="li" href="">
-                                <li>Facturas</li>
-                            </a>
+                <section class="secciones__cuenta contenido--cuenta">
 
+                    <nav class="contenedor-items__cuenta items--navegacion__cuenta">
+                        <ul class="lista-items__cuenta">
+                            <li>
+                                <a href="" class="redireccion-item__cuenta redireccion--activo">Suscripciones activas
+                                </a>
+                            </li>
 
+                            <li>
+                                <a href="" class="redireccion-item__cuenta">Suscripciones anteriores</a>
+                            </li>
 
+                            <li>
+                                <a href="" class="redireccion-item__cuenta">Mis favoritos</a>
+                            </li>
 
-
+                            <li>
+                                <a href="" class="redireccion-item__cuenta">Facturas</a>
+                            </li>
                         </ul>
 
-                    </article>
-                    <article class="derecha">
-                        <section>
-                            <h2>¡ESTAS AL DIA!</h2>
+
+                        <div class="deplegable-items__cuenta">
+                            <button type="button" class="seleccionado-item__cuenta">
+                                <p>Cuenta</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5l0 14" />
+                                    <path d="M18 13l-6 6" />
+                                    <path d="M6 13l6 6" />
+                                </svg>
+                            </button>
+                            <div class="seleccionar-item__cuenta deplegable--ocultar__cuenta">
+                                <li>
+                                    <a href="" class="redireccion-item__cuenta">Suscripciones activas
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="redireccion-item__cuenta">Suscripciones anteriores</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="redireccion-item__cuenta">Mis favoritos</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="redireccion-item__cuenta">Facturas</a>
+                                </li>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="contenedor-items__cuenta items--contenido__cuenta">
+
+                        <section class="item-seccion__cuenta seccion--nombre">
+                            <h1>¡ESTÁS AL DÍA!</h1>
                         </section>
-                        <section class="tarjeta">
-                            <article class="gym">
-                                <img class="gym" src="/FRONTEND/img/foto.jpg" alt="">
-                            </article>
-                            <article class="info">
-                                <div class="precio-nombre">
-                                    <h3 class="espacio">Nombre de gym</h3>
-                                    <div class="espacio preci">
-                                        <p>Precio del plan</p>
-                                        <p class="precio">20.000</p>
+
+                        <section class="item-seccion__cuenta seccion--contenido">
+
+
+                            <div class="item-gimnasio__cuenta">
+
+                                <div class="gimnasio-contenedor__cuenta">
+
+                                    <div class="gimnasio-imagen__cuenta">
+                                        <img src="YTo0OntzOjI6ImlkIjtpOjE0NDg4OTtzOjE6InciO2k6MzAwO3M6MToiaCI7aTozMDA7czoxOiJ0IjtzOjE5OiJtYXAtY2Fyb3VzZWwtc2xpZGVyIjt9.webp"
+                                            alt="imagen gimnasio">
                                     </div>
-                                </div>
-                                <div>
-                                    <p class="espacio fecha__vencimiento">Tu proxima factura llega el 30/8</p>
-                                </div>
 
-                                <div class="buttons espacio">
-                                    <a href="">
-                                        <button class="vg bu">Ver ginmacio</button>
-                                    </a>
-                                    <a href="">
-                                        <button class="cancelar_puntitos bu">Cancelar suscripcion</button>
-                                    </a>
-                                    <a href="">
-                                        <button class="cancelar_puntitos bu">...</button>
-                                    </a>
-                                </div>
-                            </article>
 
-                        </section>
+                                    <div class="gimnasio-info__cuenta">
 
-                        <section class="tarjeta">
-                            <article class="gym">
-                                <img class="gym" src="/FRONTEND/img/foto.jpg" alt="">
-                            </article>
-                            <article class="info">
-                                <div class="precio-nombre">
-                                    <h3 class="espacio">Nombre de gym</h3>
-                                    <div class="espacio preci">
-                                        <p>Precio del plan</p>
-                                        <p class="precio">20.000</p>
+
+
+                                        <div class="gimnasio-info-contenido__cuenta">
+
+
+                                            <div class="gimnasio-info-detalles__cuenta">
+                                                <h4>Magatlon</h4>
+                                                <p class="">Tu próxima factura llega el 30/8
+                                                </p>
+                                            </div>
+
+
+                                            <div class="gimnasio-precio__cuenta">
+
+                                                <p class="gimnasio-precio-titulo__cuenta">Precio del plan:</p>
+                                                <p class="gimnasio-precio-valor__cuenta">$20.000,00</p>
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="gimnasio-info-opciones__cuenta">
+
+                                            <button class="boton__cuarto gimnasio-boton-principal__cuenta">Ver
+                                                gimnasio</button>
+
+
+                                            <button class="boton__terciario gimnasio-boton-principal__cuenta">Cancelar
+                                                suscripción</button>
+
+                                            <button class="boton__quinto gimnasio-boton-mas__cuenta">...</button>
+
+                                        </div>
+
                                     </div>
-                                </div>
-                                <div>
-                                    <p class="espacio fecha__vencimiento">Tu proxima factura llega el 30/8</p>
+
                                 </div>
 
-                                <div class="buttons espacio">
-                                    <a href="">
-                                        <button class="vg bu">Ver ginmacio</button>
-                                    </a>
-                                    <a href="">
-                                        <button class="cancelar_puntitos bu">Cancelar suscripcion</button>
-                                    </a>
-                                    <a href="">
-                                        <button class="cancelar_puntitos bu">...</button>
-                                    </a>
+                            </div>
+
+
+
+                            <div class="item-gimnasio__cuenta">
+
+                                <div class="gimnasio-contenedor__cuenta">
+
+                                    <div class="gimnasio-imagen__cuenta">
+                                        <img src="El-gimnasio-CARD-cumple-tres-meses-en-Ciudad-de-la-Costa-Uruguay.jpeg"
+                                            alt="imagen gimnasio">
+                                    </div>
+
+
+                                    <div class="gimnasio-info__cuenta">
+
+
+
+                                        <div class="gimnasio-info-contenido__cuenta">
+
+
+                                            <div class="gimnasio-info-detalles__cuenta">
+                                                <h4>Magatlon</h4>
+                                                <p class="">Tu próxima factura llega el 30/8
+                                                </p>
+                                            </div>
+
+
+                                            <div class="gimnasio-precio__cuenta">
+
+                                                <p class="gimnasio-precio-titulo__cuenta">Precio del plan:</p>
+                                                <p class="gimnasio-precio-valor__cuenta">$20.000,00</p>
+
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="gimnasio-info-opciones__cuenta">
+
+                                            <button class="boton__cuarto gimnasio-boton-principal__cuenta">Ver
+                                                gimnasio</button>
+
+
+                                            <button class="boton__terciario gimnasio-boton-principal__cuenta">Cancelar
+                                                suscripción</button>
+
+                                            <button class="boton__quinto gimnasio-boton-mas__cuenta">...</button>
+
+                                        </div>
+
+
+
+                                    </div>
+
+
+
                                 </div>
-                            </article>
+
+                            </div>
+
 
                         </section>
-                    </article>
                 </section>
 
-                <section class="secciones__cuenta soporte--cuenta">
-                    <div class="suport">
-                        <p>¿Hay algún error?</p>
-                        <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-headset">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M4 14v-3a8 8 0 1 1 16 0v3" />
-                                <path d="M18 19c0 1.657 -2.686 3 -6 3" />
-                                <path
-                                    d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" />
-                                <path
-                                    d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" />
-                            </svg> <a class="ccn" href="">Contactá con soporte</a></p>
+
+                <section class="secciones__cuenta footer--cuenta">
+                    <p>¿Hay algún error?</p>
+                    <div class="soporte-footer__cuenta"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-headset">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 14v-3a8 8 0 1 1 16 0v3" />
+                            <path d="M18 19c0 1.657 -2.686 3 -6 3" />
+                            <path d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" />
+                            <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" />
+                        </svg>
+                        <a href="">Contactá con soporte</a>
                     </div>
                 </section>
             </article>
-
         </div>
     </main>
+
+    <script src="../script.js"></script>
 </body>
 
 </html>

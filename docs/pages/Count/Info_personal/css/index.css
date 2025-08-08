@@ -13,7 +13,7 @@ main {
 
 
 
-.redireccion--info-personal::after {
+.redireccion--activo::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -36,7 +36,7 @@ main {
 
 
 .items--contenido__cuenta {
-    gap: 20px;
+    gap: 10px;
 }
 
 .item-seccion__cuenta {
@@ -57,7 +57,7 @@ main {
 
 .seccion--contenedor__cuenta {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
     gap: 15px;
 }
 
@@ -77,10 +77,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 
-
-.deplegable-items__cuenta {
-    height: 44%;
-}
 
 
 

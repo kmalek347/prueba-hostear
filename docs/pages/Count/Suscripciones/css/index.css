@@ -1,181 +1,136 @@
-/* .contenedor__main {
-    height: 82.5dvh;
-    margin: 12.5dvh 0 0 0;
-    min-height: fit-content;
-    width: clamp(600px, 90dvw, 1800px);
-
+.seccion--contenido {
+    align-items: center;
 }
 
 
-.cuenta__article {
-    width: 90%;
-    height: 90%;
-    gap: 30px;
+.item-gimnasio__cuenta {
+    width: 100%;
+    border: .5px solid var(--color-gris-borde-oscuro);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
 }
 
 
+.gimnasio-contenedor__cuenta {
+    height: 80%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    gap: 10px;
+}
 
-.secciones__cuenta {
+
+.gimnasio-imagen__cuenta {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gimnasio-imagen__cuenta img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 
 
-
-.titulo--cuenta {
-    height: 10%;
-}
-
-.soporte--cuenta {
-    height: 10%;
-}
-
-
-.mc {
-    padding: 20px 44px;
-    background-color: var(--color-rojo);
-    border-radius: 25px;
-    border: var(--color-rojo) solid;
-    color: var(--color-blanco);
-}
-
-.mc:hover {
-    background-color: var(--color-blanco);
-    color: var(--color-negro);
-}
-
-
-.c {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.c1 {
-    display: grid;
-    grid-template-columns: 1fr 17fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
-
-.flecha {
-    color: var(--color-blanco);
-}
-
-.division_1 {
-    display: flex;
-    gap: 20px;
-}
-
-.izquierda {
-    display: grid;
-    grid-template-rows: 10fr 2fr;
-    gap: 10px;
-}
-
-.lista {
-    display: grid;
-    list-style-type: none;
-    gap: 10px;
-    padding: 0px;
-}
-
-.li {
-    color: var(--color-blanco);
-    text-decoration: none;
-}
-
-.suport {
-    gap: 5px;
+.gimnasio-info__cuenta {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.ccn {
-    color: var(--color-celeste);
-    text-decoration: none;
-}
 
-.suport p {
+.gimnasio-info-contenido__cuenta {
     display: flex;
-    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.gimnasio-info-nombre__cuenta {
+    width: 100%;
+    align-self: flex-start;
+}
+
+.gimnasio-info-detalles__cuenta h4 {
+    text-align: start;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: var(--fuente-contenidos);
+}
+
+
+.gimnasio-info-detalles__cuenta p {
+    text-align: start;
+    font-size: .9em;
+    font-weight: 400;
+}
+
+
+
+.gimnasio-precio__cuenta {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gimnasio-precio-titulo__cuenta {
+    font-size: .9em;
+    font-weight: 400;
+}
+
+.gimnasio-precio-valor__cuenta {
+    font-size: clamp(14px, 2dvw, 20px);
+    font-weight: 800;
+    color: var(--color-verde);
+}
+
+
+
+
+.gimnasio-info-opciones__cuenta {
+    display: flex;
+    width: 100%;
     gap: 5px;
 }
 
-h2 {
-    text-align: center;
+
+.gimnasio-boton-principal__cuenta {
+    padding: 5px 1px;
+    width: 50%;
+    font-size: clamp(14px, 1.3dvw, 16px);
 }
 
-.derecha {
-    display: grid;
-    gap: 15px;
+.gimnasio-boton-mas__cuenta {
+    width: 15%;
+    padding: 15px 1px;
+    font-size: 12px;
 }
 
-.tarjeta {
-    padding: 10px 10px;
-    border: var(--color-blanco) solid 1px;
-    border-radius: 15px;
-    display: flex;
-    width: 550px;
-    height: 100px;
+
+
+
+
+
+@media screen and (max-width: 760px) {
+    .gimnasio-contenedor__cuenta {
+        grid-template-columns: none;
+        grid-template-rows: 140px auto;
+        gap: 10px;
+        height: 90%;
+        width: 90%;
+    }
+
+    .item-gimnasio__cuenta {
+        height: 300px;
+    }
 }
-
-.gym {
-    border-radius: 15px;
-    width: 150px;
-    height: 100px;
-}
-
-.info {
-    display: grid;
-    grid-template-rows: 1fr 1fr 3fr;
-    width: 380px;
-    align-items: end;
-}
-
-.precio-nombre {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: baseline;
-}
-
-.preci {
-    text-align: end;
-}
-
-.espacio {
-    padding: 0px 10px;
-}
-
-.precio {
-    color: green;
-}
-
-.fecha__vencimiento {
-    align-items: start;
-}
-
-.buttons {
-    display: flex;
-    gap: 5px;
-}
-
-.bu {
-    padding: 9px 5px;
-    border-radius: 15px;
-    border: none;
-
-}
-
-.vg {
-    background-color: blue;
-    color: var(--color-blanco);
-}
-
-.cancelar_puntitos {
-    color: var(--color-blanco);
-    background-color: var(--color-gris);
-    border: var(--color-blanco) solid 1px;
-} */

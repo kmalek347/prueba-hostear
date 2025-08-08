@@ -95,11 +95,11 @@ h2 {
 button {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .boton__principal {
     width: min(30dvw, 180px);
-    --prueba: min(28dvw, 180px);
     font-size: clamp(10px, 1em, 64px);
     font-weight: bold;
     padding: .8rem 0em;
@@ -177,6 +177,50 @@ button {
 
 }
 
+
+
+
+.boton__cuarto {
+    width: min(30dvw, 180px);
+    font-size: clamp(10px, 1em, 64px);
+    font-weight: bold;
+    padding: .8rem 0em;
+    border-radius: 60px;
+    color: var(--color-blanco);
+    background-color: var(--color-azul);
+    cursor: pointer;
+    transition: color 0.3s, background-color .3s;
+}
+
+
+.boton__cuarto:hover {
+    color: var(--color-azul);
+    background-color: transparent;
+    border: 1px solid var(--color-azul);
+
+}
+
+
+.boton__quinto {
+    max-width: 350px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1.1em 3em;
+    border-radius: 60px;
+    color: var(--color-blanco);
+    background-color: var(--color-negro);
+    border: 1px solid var(--color-blanco);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    transition: opacity .3s;
+}
+
+.boton__quinto:hover {
+    opacity: .5;
+
+}
 
 
 
