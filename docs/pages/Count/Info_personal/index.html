@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/800X800_cortada.png">
+    <link rel="stylesheet" href="../../../fuentes/fuentes.css">
+    <link rel="stylesheet" href="../../../css/index.css">
+    <link rel="stylesheet" href="../Cuenta/css/index.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>Información personal | Motivus</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor__header">
+
+            <a href="../../../index.html">
+                <img src="../../../img/800X800_cortada.png" alt="logo">
+            </a>
+
+            <a href="pages/login/index.html"><button class="boton__principal">
+                    CUENTA
+                </button></a>
+
+        </div>
+    </header>
+    <main>
+
+        <div class="contenedor__main">
+            <article class="cuenta__article">
+
+                <section class="secciones__cuenta titulo--cuenta">
+
+                    <h1>¡Hola, <strong class="red">Sebastian Abrego</strong>!</h1>
+
+                </section>
+
+                <section class="secciones__cuenta contenido--cuenta">
+
+                    <nav class="contenedor-items__cuenta items--navegacion__cuenta">
+                        <ul class="lista-items__cuenta">
+                            <li>
+                                <a href="../Info_personal/index.html"
+                                    class="redireccion-item__cuenta redireccion--info-personal">Información
+                                    personal
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../Suscripciones/index.html"
+                                    class="redireccion-item__cuenta redireccion--gimnasios">Mis gimnasios</a>
+                            </li>
+
+                            <li>
+                                <a href="../Seguridad/index.html"
+                                    class="redireccion-item__cuenta redireccion--acesso-seguridad">Datos de
+                                    acceso y seguridad</a>
+                            </li>
+
+                            <li>
+                                <a href="" class="redireccion-item__cuenta redireccion--ficha-salud">Ficha de salud</a>
+                            </li>
+                        </ul>
+
+
+                        <div class="deplegable-items__cuenta">
+                            <button type="button" class="seleccionado-item__cuenta">
+                                <p>Cuenta</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-down">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 5l0 14" />
+                                    <path d="M18 13l-6 6" />
+                                    <path d="M6 13l6 6" />
+                                </svg>
+                            </button>
+                            <div class="seleccionar-item__cuenta deplegable--ocultar__cuenta">
+                                <li>
+                                    <a href="../Info_personal/index.html" class="redireccion-item__cuenta">Información
+                                        personal
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="../Suscripciones/index.html" class="redireccion-item__cuenta">Mis
+                                        gimnasios</a>
+                                </li>
+
+                                <li>
+                                    <a href="../Seguridad/index.html" class="redireccion-item__cuenta">Datos de
+                                        acceso y seguridad</a>
+                                </li>
+
+                                <li>
+                                    <a href="" class="redireccion-item__cuenta">Ficha de salud</a>
+                                </li>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="contenedor-items__cuenta items--contenido__cuenta">
+
+                        <section class="item-seccion__cuenta seccion--nombre">
+                            <h1>INFORMACIÓN PERSONAL</h1>
+                        </section>
+
+
+
+
+                        <section class="item-seccion__cuenta seccion--contenido">
+
+                            <div class="seccion--contenedor__cuenta">
+                                <div class="item__cuenta item--nombre">
+                                    <label for="input__nombre">Nombre</label>
+                                    <input type="text" id="input__nombre" autocomplete="off" maxlength="20"
+                                        minlength="3" class="inputs__cuenta inputs__readonly" disabled
+                                        pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" value="Agustin">
+                                </div>
+
+                                <div class="item__cuenta item--apellido">
+                                    <label for="input__apellido">Apellido</label>
+                                    <input type="text" id="input__apellido" autocomplete="off" maxlength="20"
+                                        minlength="3" class="inputs__cuenta inputs__readonly" disabled
+                                        pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$" value="Cortes">
+                                </div>
+
+                                <div class="item__cuenta item--dni">
+                                    <label for="input__dni">DNI</label>
+                                    <input type="text" id="input__dni" autocomplete="off" maxlength="8"
+                                        inputmode="numeric" minlength="6" class="inputs__cuenta inputs__readonly"
+                                        disabled pattern="\d*" value="37.652.123">
+                                </div>
+                                <div class="item__cuenta item--genero">
+                                    <label for="input__genero">Género</label>
+                                    <select id="input__genero" class="inputs__genero inputs__readonly" disabled>
+                                        <option value="" disabled selected>Masculino</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="femenino">Femenino</option>
+                                        <option value="no_decir">Prefiero no decirlo</option>
+                                    </select>
+                                </div>
+
+                                <div class="item__cuenta">
+                                    <label for="input__nacimiento item--nacimiento">Fecha de nacimiento</label>
+                                    <input type="date" id="input__nacimiento" autocomplete="off"
+                                        class="inputs__cuenta inputs__readonly" min="1900-01-01" max="2025-12-31"
+                                        value="2000-08-10" disabled>
+                                </div>
+
+                                <div class="item__cuenta">
+
+                                    <label for="input__provincia item--provincia">Provincia</label>
+                                    <select id="input__provincia" class="inputs__cuenta inputs__readonly" disabled>
+                                        <option value="" disabled selected>Buenos Aires</option>
+                                        <option value="buenos_aires">Buenos Aires</option>
+                                        <option value="mendoza">Mendoza</option>
+                                        <option value="santa_fe">Santa Fe</option>
+                                        <option value="cordoba">Córdoba</option>
+                                        <option value="entre-rios">Entre Rios</option>
+                                        <option value="tierra_del_fuego">Tierra del fuego</option>
+                                        <option value="santa_cruz">Santa Cruz</option>
+                                        <option value="chubut">Chubut</option>
+                                        <option value="rio_negro">Río Negro</option>
+                                        <option value="neuquen">Neuquén</option>
+                                        <option value="la_pampa">La Pampa</option>
+                                        <option value="san_luis">San Luis</option>
+                                        <option value="san_juan">San Juan</option>
+                                        <option value="la_rioja">La Rioja</option>
+                                        <option value="catamarca">Catamarca</option>
+                                        <option value="tucuman">Tucumán</option>
+                                        <option value="salta">Salta</option>
+                                        <option value="jujuy">Jujuy</option>
+                                        <option value="santiago_del_estero">Santiago del Estero</option>
+                                        <option value="chaco">Chaco</option>
+                                        <option value="corrientes">Corrientes</option>
+                                        <option value="formosa">Formosa</option>
+                                        <option value="misiones">Misiones</option>
+                                    </select>
+                                </div>
+
+                                <div class="item__cuenta item--ciudad">
+                                    <label for="input__ciudad">Ciudad</label>
+                                    <input type="text" id="input__ciudad" placeholder="Ingresá tu ciudad"
+                                        autocomplete="off" maxlength="30" minlength="4"
+                                        class="inputs__cuenta inputs__readonly" disabled value="Mar del Plata">
+                                </div>
+
+                            </div>
+
+
+
+
+                        </section>
+                        <section class="item-seccion__cuenta seccion--nombre">
+                            <button class="boton__secundario">Guardar cambios</button>
+                        </section>
+
+                    </div>
+
+                </section>
+
+                <section class="secciones__cuenta footer--cuenta">
+                    <p>¿Hay algún error?</p>
+                    <div class="soporte-footer__cuenta"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-headset">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 14v-3a8 8 0 1 1 16 0v3" />
+                            <path d="M18 19c0 1.657 -2.686 3 -6 3" />
+                            <path d="M4 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" />
+                            <path d="M15 14a2 2 0 0 1 2 -2h1a2 2 0 0 1 2 2v3a2 2 0 0 1 -2 2h-1a2 2 0 0 1 -2 -2v-3z" />
+                        </svg>
+                        <a href="">Contactá con soporte</a>
+                    </div>
+
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+main {
+    height: auto;
+    min-height: 100dvh;
+
+}
+
+.contenedor__main {
+    height: auto;
+    min-height: 85dvh;
+    padding: 4dvh 0;
+}
+
+
+
+
+.redireccion--info-personal::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 100%;
+    height: 2px;
+    z-index: 5;
+    background-color: var(--color-rojo);
+    transition: width .5s, left .5s;
+}
+
+
+
+
+
+
+.contenido--cuenta {
+    gap: 0px;
+}
+
+
+.items--contenido__cuenta {
+    gap: 20px;
+}
+
+.item-seccion__cuenta {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.item-seccion__cuenta h1 {
+    font-size: clamp(20px, 2.2dvw, 28px);
+}
+
+
+.seccion--contenido {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.seccion--contenedor__cuenta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 15px;
+}
+
+.item__cuenta label {
+    text-align: start;
+    color: var(--color-blanco);
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert();
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.deplegable-items__cuenta {
+    height: 44%;
+}
+
+
+
+
+
+
+
+.footer--cuenta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+
+}
+
+.footer--cuenta p,
+.soporte-footer__cuenta a {
+    font-weight: 500;
+}
+
+.soporte-footer__cuenta {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.soporte-footer__cuenta a {
+    color: var(--color-azul-claro);
+}

@@ -14,6 +14,7 @@ body {
     --color-rojo: #f23827;
     --color-blanco: #f2f2f2;
     --color-gris-letra: #c6baba;
+    --color-gris-oscuro-letra: #918f8f;
     --color-gris-borde: #888888;
     --color-gris-borde-oscuro: #4C4848;
     --color-gris-fondo: #2b2b2b;
@@ -90,12 +91,18 @@ h2 {
     font-size: clamp(32px, 3.4dvw, 68px);
 }
 
+
+button {
+    display: flex;
+    justify-content: center;
+}
+
 .boton__principal {
     width: min(30dvw, 180px);
     --prueba: min(28dvw, 180px);
     font-size: clamp(10px, 1em, 64px);
     font-weight: bold;
-    padding: 1.1em 0em;
+    padding: .8rem 0em;
     border-radius: 60px;
     color: var(--color-blanco);
     background-color: var(--color-rojo);
@@ -148,6 +155,31 @@ h2 {
 }
 
 
+.boton__terciario {
+    max-width: 350px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1.1em 3em;
+    border-radius: 60px;
+    color: var(--color-blanco);
+    background-color: transparent;
+    border: 1px solid var(--color-blanco);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    transition: color .3s, border .3s;
+}
+
+.boton__terciario:hover {
+    color: var(--color-rojo);
+    border: 1px solid var(--color-rojo);
+
+}
+
+
+
+
 .contenedor__body {
     width: 100%;
     height: auto;
@@ -189,11 +221,11 @@ p {
 
 header {
     width: 100dvw;
-    height: 20dvh;
+    height: auto;
     display: flex;
     place-content: center;
     position: fixed;
-    top: 0;
+    top: 1dvh;
     z-index: 10;
     background: transparent;
 
@@ -289,6 +321,7 @@ h1 {
 
 .contenedor__introduccion button {
     width: min(35dvw, 300px);
+    padding: 1.1rem 0;
 
 }
 
@@ -715,7 +748,6 @@ main {
 
 .boton__contratar {
     grid-area: boton;
-    width: 65%;
     align-self: center;
 }
 

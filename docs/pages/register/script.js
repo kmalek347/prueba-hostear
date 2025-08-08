@@ -24,7 +24,7 @@ const reglaMayuscula = document.getElementById("regla-mayuscula__form")
 const reglaNumero = document.getElementById("regla-numero__form")
 const reglaEspecial = document.getElementById("regla-especial__form")
 
-console.log(seccionesForm[2])
+
 
 
 const evuluarBoton = (seccion) => {
@@ -32,8 +32,11 @@ const evuluarBoton = (seccion) => {
         case "inputs__personales":
 
             requeridosPersonales.forEach(input => {
+                console.log("se itera un input", input)
                 if (!input.value.trim()) {
+                    console.log("este input no esta bien")
                     botonContinuar.setAttribute('disabled', true);
+
                 }
                 else botonContinuar.removeAttribute('disabled');
             })

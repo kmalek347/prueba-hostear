@@ -1,0 +1,51 @@
+.cuenta__article {
+    height: 75dvh;
+}
+
+
+
+.item__cuenta {
+    width: 100%;
+}
+
+.item__cuenta a {}
+
+.item__cuenta>a button {
+    background-color: transparent;
+    color: var(--color-blanco);
+    border-radius: 10px;
+    border: .5px solid var(--color-gris-borde-oscuro);
+    font-family: inherit;
+    cursor: pointer;
+    font-size: clamp(16px, 1.8dvw, 28px);
+    font-weight: 800;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s border, .2s background-color;
+    width: 100%;
+}
+
+
+.item__cuenta>a button:hover {
+    border: var(--color-azul) solid .5px;
+    background-color: color-mix(in srgb, var(--color-gris-borde-oscuro) 20%, transparent 100%);
+}
+
+
+.redireccion--info-personal::after {
+    width: 0;
+}
+
+.redireccion--acesso-seguridad::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 100%;
+    height: 2px;
+    z-index: 5;
+    background-color: var(--color-rojo);
+    transition: width .5s, left .5s;
+}

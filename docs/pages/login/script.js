@@ -18,7 +18,7 @@ const usuarios = [
 
     {
         usuario: {
-            email: "sebasabregi78@gmail.com",
+            email: "sebasabrego78@gmail.com",
             contrasena: "1234"
         },
 
