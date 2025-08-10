@@ -30,9 +30,6 @@ main {
 
 
 
-.contenido--cuenta {
-    gap: 0px;
-}
 
 
 .items--contenido__cuenta {
@@ -40,13 +37,15 @@ main {
 }
 
 .item-seccion__cuenta {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .item-seccion__cuenta h1 {
-    font-size: clamp(20px, 2.2dvw, 28px);
+    font-size: clamp(20px, 2dvw, 28px);
+    font-family: var(--fuente-contenidos);
+    font-weight: bold;
 }
 
 
@@ -57,7 +56,7 @@ main {
 
 .seccion--contenedor__cuenta {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     gap: 15px;
 }
 
@@ -73,7 +72,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-
+.seccion--cambiar {
+    margin-top: 5dvh;
+}
 
 
 
@@ -105,4 +106,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .soporte-footer__cuenta a {
     color: var(--color-azul-claro);
+}
+
+
+@media screen and (max-width: 640px) {
+    .item-seccion__cuenta {
+        width: 90%;
+    }
 }
